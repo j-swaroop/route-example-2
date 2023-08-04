@@ -1,0 +1,85 @@
+/* Write your CSS code here */
+.blog-item-link{
+    padding: 20px;
+    border-color: #d3d3d3;
+    border-style: solid;
+    border-width: 1px;
+    width: 90%;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+.blog-item-container{
+    display: flex;
+    width: 90%;
+    /* align-items: center; */
+}
+
+.blog-image{
+    height: 200px;
+    width: 350px;
+    border-radius: 8px;
+}
+.blogs-text-details{
+    margin-left: 20px;
+}
+.avatar-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.title{
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #000000;
+}
+.topic{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #8e8e8e;
+}
+.author-avatar-container{
+    display: flex;
+    align-items: center;
+}
+.author-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #8e8e8e;
+    margin-left: 10px;
+}
+@media (max-width: 900px){
+     .blog-image{
+        height: 200px;
+        max-width: 300px;
+    }
+}
+@media (max-width: 576px){
+    .blog-item-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .blogs-text-details{
+        margin-left: 0px;
+    }
+    .blog-image{
+        height: 150px;
+        width: 90%;
+        /* max-width: 250px; */
+    }
+    .topic{
+        font-size: 15px;
+    }
+    .title{
+        font-size: 17px;
+    }
+    .avatar-image{
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+    }
+    .author-text{
+        font-size: 15px;
+    }
+}
